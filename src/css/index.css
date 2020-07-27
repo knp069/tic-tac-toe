@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Indie+Flower&display=swap');
+
+body {
+  background-color: #212121;
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.game-board {
+  margin: auto;
+  vertical-align: middle;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  color: white;
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 2px solid #999;
+  border-radius: 5px;
+  float: left;
+  font-size: 80px;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  line-height: 34px;
+  height: 100px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 100px;
+}
+
+.square:hover {
+  border: 5px solid #999;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.game-info>button {
+  padding: 20px;
+  width: 120px;
+  border: 5px solid #759b75;
+  border-radius: 10px;
+  background-color: darkseagreen;
+}
+
+.game-info>button:nth-child(1){
+  margin-right: 10px;
+}
+
+.game-info>button:nth-child(2){
+  margin-left: 10px;
+}
+
+
+.score-board{
+  color: white;
+  font-size: 40px;
+  font-weight: normal;
+  font-family: 'Comfortaa', cursive;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.score-board>div{
+    margin-top: 20px;
+}
